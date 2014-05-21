@@ -1,0 +1,36 @@
+default partial alphanumeric_keys
+xkb_symbols "dvorak" {
+    include "us(dvorak)"
+    name[Group1]= "Efficiency (Dvorak)";
+
+    include "level3(ralt_switch)"
+    include "kpdl(comma)"
+    include "eurosign(5)"
+
+    key <AE03> { [3, numbersign, sterling ] };
+    key <AE04> { [4, dollar, section, currency ] };
+    key <AE08> { [8, asterisk, onehalf ] };
+
+    key <AC01> { [a, A, adiaeresis, Adiaeresis ] };
+    key <AC02> { [o, O, otilde, Otilde ] };
+    key <AC03> { [e, E, odiaeresis, Odiaeresis ] };
+    key <AC04> { [u, U, udiaeresis, Udiaeresis ] };
+    key <AC10> { [s, S, scaron, Scaron ] };
+    key <AB10> { [z, Z, zcaron, Zcaron ] };
+
+    key <AC03> { [e, E, BackSpace, BackSpace] };
+    key <AC04> { [u, U, Delete, Delete] };
+    key <AC07> { [h, H, Return, Return] };
+
+    key <AC08> { [t, T, Left, Left] };
+    key <AC09> { [n, N, Down, Down] };
+    key <AC10> { [s, S, Right, Right] };
+    key <AD09> { [r, R, Up, Up] };
+
+
+    key <AD07> { [g, G, Page_Up, Page_Up] };
+    key <AD08> { [c, C, Home, Home] };
+    key <AD10> { [l, L, End, End] };
+    key <AD11> { [slalh, question, Page_Down, Page_Down] };
+
+};
